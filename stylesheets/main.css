@@ -1,0 +1,61 @@
+.row-1 {
+  background-color: rgba(174, 216, 230, 1.0);
+  height: 100px;
+}
+
+.row-2 {
+  background-color: rgba(148, 242, 144, 1.0);
+  height: 100px;
+}
+.row-3 {
+  background-color: rgba(255, 255, 10, 1.0);
+  height: 100px;
+}
+
+.row-4 {
+  background-color: rgba(253, 165, 7, 1.0);
+  height: 100px;
+}
+
+.col-1 {
+  width: 100px;
+}
+
+.col-2 {
+  width: 100px;
+}
+
+.col-3 {
+  width: 100px;
+}
+
+.col-4 {
+  width: 100px;
+}
+
+
+.grid-container {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  color: black;
+}
+
+.grid-container span {
+  border: 1px solid grey;
+}
+
+.col-slider {
+  transform-origin: 50px 50px;
+  transform: rotate(-90deg);
+}
+
+.slider {
+  width: 100px;
+  margin: 1px;
+}
+
+.clicked {
+  background-color: purple;
+}
