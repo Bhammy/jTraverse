@@ -9,7 +9,12 @@
   <body>
 
     <h1>jTraverse</h1>
-
+    <p>This page was built with jTraverse. Use it to query for information (click a box) and set the size of the below elements!</p>
+      <hr />
+    <p>Currently selected cell value:<content id="cell-val"></content>
+    <hr />
+    <br/>
+    <button>Reset all box sizes</button>
     <div class="grid-and-col-slider">
       <div class="grid-container">
         <span class="row-1 col-1" style="height:100px; width:100px">
@@ -24,7 +29,6 @@
         <span class="row-1 col-4" style="height:100px; width:100px">
           1,4
         </span>
-        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
         <span class="row-2 col-1" style="height:100px; width:100px">
           2,1
         </span>
@@ -37,7 +41,6 @@
         <span class="row-2 col-4" style="height:100px; width:100px">
           2,4
         </span>
-        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
         <span class="row-3 col-1" style="height:100px; width:100px">
           3,1
         </span>
@@ -50,8 +53,6 @@
         <span class="row-3 col-4" style="height:100px; width:100px">
           3,4
         </span>
-        <input type="range" min="40" max="160" step="1"
-        value="100" class="slider col-slider">
         <span class="row-4 col-1" style="height:100px; width:100px">
           4,1
         </span>
@@ -64,16 +65,18 @@
         <span class="row-4 col-4" style="height:100px; width:100px">
           4,4
         </span>
-        <input type="range" min="40" max="160" step="1"
-        value="100" class="slider col-slider">
-        <input type="range" min="40" max="160" step="1"
-        value="100" class="slider row-slider">
-        <input type="range" min="40" max="160" step="1"
-        value="100" class="slider row-slider">
-        <input type="range" min="40" max="160" step="1"
-        value="100" class="slider row-slider">
-        <input type="range" min="40" max="160" step="1"
-        value="100" class="slider row-slider">
+      </div>
+      <div class="col-sliders">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+      </div>
+      <div class="row-sliders">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
       </div>
     </div>
 

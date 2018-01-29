@@ -36,10 +36,11 @@
 
 .grid-container {
   display: flex;
-  width: 600px;
+  width: 500px;
   flex-wrap: wrap;
   font-weight: bold;
   color: black;
+  margin: 0px;
 }
 
 .grid-container span {
@@ -58,4 +59,24 @@
 
 .clicked {
   background-color: purple;
+}
+
+input {
+  width: 100px;
+  height: 100px;
+}
+
+.col-sliders {
+  width: 100px;
+}
+
+.grid-and-col-slider {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+button {
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
