@@ -1,3 +1,24 @@
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+  padding: 10;
+}
+
+header {
+  background-color: #3dc8f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+.main, p {
+  margin: 10px;
+  padding: 10px;
+}
+
 .row-1 {
   background-color: rgba(174, 216, 230, 1.0);
   height: 100px;
@@ -36,7 +57,9 @@
 
 .grid-container {
   display: flex;
-  width: 500px;
+  /* width: 500px; */
+  width: auto;
+  max-width: 410px;
   flex-wrap: wrap;
   font-weight: bold;
   color: black;
@@ -72,8 +95,17 @@ input {
 
 .grid-and-col-slider {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  margin: auto;
   width: 900px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {

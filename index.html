@@ -4,81 +4,87 @@
     <link rel="stylesheet" href="stylesheets/main.css"></link>
     <script src="./lib/traverse.js" type="application/javascript"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>jTraverse</title>
   </head>
   <body>
 
-    <h1>jTraverse</h1>
-    <p>This page was built with jTraverse. Use it to query for information (click a box) and set the size of the below elements!</p>
+    <header>
+      <h1>jTraverse</h1>
+    </header>
+    <section class="main">
+        <p>This page was built with jTraverse. Use it to query for information (click a box) and set the size of the below elements!</p>
+        <hr />
+      <p>Last selected cell value:<content id="cell-val"></content>
       <hr />
-    <p>Currently selected cell value:<content id="cell-val"></content>
-    <hr />
-    <br/>
-    <button>Reset all box sizes</button>
-    <div class="grid-and-col-slider">
-      <div class="grid-container">
-        <span class="row-1 col-1" style="height:100px; width:100px">
-          1,1
-        </span>
-        <span class="row-1 col-2" style="height:100px; width:100px">
-          1,2
-        </span>
-        <span class="row-1 col-3" style="height:100px; width:100px">
-          1,3
-        </span>
-        <span class="row-1 col-4" style="height:100px; width:100px">
-          1,4
-        </span>
-        <span class="row-2 col-1" style="height:100px; width:100px">
-          2,1
-        </span>
-        <span class="row-2 col-2" style="height:100px; width:100px">
-          2,2
-        </span>
-        <span class="row-2 col-3" style="height:100px; width:100px">
-          2,3
-        </span>
-        <span class="row-2 col-4" style="height:100px; width:100px">
-          2,4
-        </span>
-        <span class="row-3 col-1" style="height:100px; width:100px">
-          3,1
-        </span>
-        <span class="row-3 col-2" style="height:100px; width:100px">
-          3,2
-        </span>
-        <span class="row-3 col-3" style="height:100px; width:100px">
-          3,3
-        </span>
-        <span class="row-3 col-4" style="height:100px; width:100px">
-          3,4
-        </span>
-        <span class="row-4 col-1" style="height:100px; width:100px">
-          4,1
-        </span>
-        <span class="row-4 col-2" style="height:100px; width:100px">
-          4,2
-        </span>
-        <span class="row-4 col-3" style="height:100px; width:100px">
-          4,3
-        </span>
-        <span class="row-4 col-4" style="height:100px; width:100px">
-          4,4
-        </span>
+      <br/>
+      <div class="buttons">
+        <button id="size-reset">Reset cell sizes</button>
+        <button id="color-cycle">Cycle cell colors</button>
       </div>
-      <div class="col-sliders">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+      <div class="grid-and-col-slider">
+        <div class="grid-container">
+          <span class="row-1 col-1" style="height:100px; width:100px">
+            1,1
+          </span>
+          <span class="row-1 col-2" style="height:100px; width:100px">
+            1,2
+          </span>
+          <span class="row-1 col-3" style="height:100px; width:100px">
+            1,3
+          </span>
+          <span class="row-1 col-4" style="height:100px; width:100px">
+            1,4
+          </span>
+          <span class="row-2 col-1" style="height:100px; width:100px">
+            2,1
+          </span>
+          <span class="row-2 col-2" style="height:100px; width:100px">
+            2,2
+          </span>
+          <span class="row-2 col-3" style="height:100px; width:100px">
+            2,3
+          </span>
+          <span class="row-2 col-4" style="height:100px; width:100px">
+            2,4
+          </span>
+          <span class="row-3 col-1" style="height:100px; width:100px">
+            3,1
+          </span>
+          <span class="row-3 col-2" style="height:100px; width:100px">
+            3,2
+          </span>
+          <span class="row-3 col-3" style="height:100px; width:100px">
+            3,3
+          </span>
+          <span class="row-3 col-4" style="height:100px; width:100px">
+            3,4
+          </span>
+          <span class="row-4 col-1" style="height:100px; width:100px">
+            4,1
+          </span>
+          <span class="row-4 col-2" style="height:100px; width:100px">
+            4,2
+          </span>
+          <span class="row-4 col-3" style="height:100px; width:100px">
+            4,3
+          </span>
+          <span class="row-4 col-4" style="height:100px; width:100px">
+            4,4
+          </span>
+        </div>
+        <div class="col-sliders">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider col-slider">
+        </div>
+        <div class="row-sliders">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+          <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
+        </div>
       </div>
-      <div class="row-sliders">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
-        <input type="range" min="40" max="160" step="1" value="100" class="slider row-slider">
-      </div>
-    </div>
-
+    </section>
   </body>
 </html>
