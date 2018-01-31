@@ -4,7 +4,7 @@
   padding: 10;
 }
 
-header {
+header, footer {
   background-color: #3dc8f7;
   display: flex;
   justify-content: center;
@@ -14,9 +14,23 @@ header {
   padding: 10px;
 }
 
+footer {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+}
+
 .main, p {
   margin: 10px;
   padding: 10px;
+}
+
+ul {
+  margin: 10px;
 }
 
 .row-1 {
