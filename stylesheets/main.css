@@ -33,6 +33,10 @@ ul {
   margin: 10px;
 }
 
+#city-input, #country-input {
+  height: auto;
+}
+
 .row-1 {
   background-color: rgba(174, 216, 230, 1.0);
   height: 100px;
@@ -126,4 +130,8 @@ input {
 button {
   margin-top: 0px;
   margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
 }

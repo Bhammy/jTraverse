@@ -16,7 +16,25 @@
           <ul>
             <li>Query for information (click a box)</li>
             <li>Set the size of the below elements (move sliders) </li>
-            <li>Change the property of elements (click a box, cycle color values or reset them)</li>
+            <li>Change other properties of elements (click a box, cycle color values or reset them)</li>
+            <li>Easily make ajax requests! For example:</li>
+            <li class="ajax-box">
+              <form>
+                <label>City
+                  <input id="city-input" type="text"/>
+                </label>
+                <label>Country
+                  <input id="country-input" type="text"/>
+                </label>
+                <button id="ajax-button">Make Request</button>
+              </form>
+            </li>
+            <div class="weather hidden">
+              <ul>
+                <li class="weather-content">
+                </li>
+              </ul>
+            </div>
           </ul>
         <hr />
       <p>Last selected cell value:<content id="cell-val"></content>
