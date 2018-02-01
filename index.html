@@ -26,12 +26,21 @@
                 <label>Country
                   <input id="country-input" type="text"/>
                 </label>
-                <button id="ajax-button">Make Request</button>
+                <button id="weather-button">Make Request</button>
               </form>
             </li>
-            <div class="weather hidden">
+            <li class="ajax-box hutt-li">
+              <form>
+                <label>Enter sentence to translate to Huttese:
+                  <input id="to-translate" type="text" />
+                </label>
+                <button id="translate-button">Make Request</button>
+              </form>
+            </li>
+            <div class="return-data hidden">
               <ul>
-                <li class="weather-content">
+                <li class="return-data-content">
+                  <p></p>
                 </li>
               </ul>
             </div>

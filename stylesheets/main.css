@@ -33,7 +33,7 @@ ul {
   margin: 10px;
 }
 
-#city-input, #country-input {
+#city-input, #country-input, #to-translate {
   height: auto;
 }
 
@@ -108,6 +108,10 @@ input {
   height: 100px;
 }
 
+#to-translate {
+  width: 200px;
+}
+
 .col-sliders {
   width: 100px;
 }
@@ -134,4 +138,7 @@ button {
 
 .hidden {
   display: none;
+}
+
+.hutt-li {
 }
